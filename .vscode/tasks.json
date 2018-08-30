@@ -8,16 +8,17 @@
             "type": "shell",
             "command": "g++",
             "args": ["-g","${file}","-o","${fileBasenameNoExtension}.exe"],   
+            //"isShellCommand":true,
             // "args": [
             //     // Ask msbuild to generate full paths for file names.
             //     "/property:GenerateFullPaths=true",
             //     "/t:build"
             // ],
-            "group": "build",
-            "presentation": {
-                // Reveal the output only if unrecognized errors occur.
-                "reveal": "silent"
-            },
+            // "group": "build",
+            // "presentation": {
+            //     // Reveal the output only if unrecognized errors occur.
+            //     "reveal": "silent"
+            // },
             // "windows": {
             //     "command": "g++",
             //     "args": [
@@ -30,7 +31,7 @@
             //     ]
             // },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
-            "problemMatcher": "$msCompile"
+           // "problemMatcher": "$msCompile"
         }
     ]
 }

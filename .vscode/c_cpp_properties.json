@@ -4,14 +4,23 @@
             "name": "Win32",
             "includePath": [
                 "C:/MinGW/include/*",
-                "C:/MinGW/lib/gcc/mingw32/5.3.0/include/**",
-                "${workspaceFolder}/**"
+                "C:/MinGW/lib/gcc/mingw32/5.3.0/include",
+                "${workspaceFolder}/package/header/*",
+                "${workspaceFolder}/package/c/*"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
+            "browse": {
+                "path":[
+                    "${workspaceFolder}/package/header",
+                    "${workspaceFolder}/package/c"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
             "intelliSenseMode": "msvc-x64"
         }
     ],
